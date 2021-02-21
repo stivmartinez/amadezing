@@ -1,0 +1,34 @@
+@import "./variables/font-face";
+
+$color__grey: #eff2f5;
+$color__titles: #010101;
+$color__text: #787e83;
+
+html {
+  font-family: "Gordita Regular";
+  font-weight: normal;
+}
+
+body {
+  color: $color__titles;
+  height: 2000px;
+  font-family: "Gordita Regular";
+  font-weight: normal;
+}
+
+@import "./layout/grid";
+@import "./layout/reset";
+
+@import "./header/header";
+@import "./clients/clients";
+@import "./footer/footer";
+@import "./services/services";
+@import "./work/work";
+
+@import "./hero/hero";
+
+@media only screen and (max-width: 48em) {
+  .container {
+    width: auto;
+  }
+}

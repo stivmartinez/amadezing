@@ -1,0 +1,150 @@
+#work {
+  background: $color__grey;
+  display: block;
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+.work {
+  display: block;
+  margin: 0 0 60px 0;
+  position: relative;
+
+  &--bg {
+    background: #010101 no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    right: -48%;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .row,
+  .container {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  &--title {
+    display: block;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      background: darken($color__grey, 12%);
+      content: "";
+      display: block;
+      height: 140px;
+      margin: 30px auto -40px auto;
+      position: relative;
+      width: 1px;
+    }
+  }
+
+  &--caption {
+    &__logo {
+      margin-bottom: 32px;
+      width: 120px;
+    }
+
+    &__title {
+      font-family: "Gordita Medium";
+      font-size: 1.75rem;
+    }
+
+    &__desc {
+      font-size: 1.125rem;
+      line-height: 1.875;
+      margin: 30px 0;
+    }
+
+    &__metas {
+      display: block;
+      position: relative;
+
+      &::before {
+        background: darken($color__grey, 12%);
+        content: "";
+        display: block;
+        height: 2px;
+        margin-bottom: 30px;
+        width: 80px;
+      }
+
+      > span {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+
+        &::after {
+          content: "/";
+          display: inline-block;
+          margin: 0 8px;
+          position: relative;
+          top: 2px;
+          vertical-align: middle;
+        }
+
+        &:last-of-type::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &--thumbs {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+
+    &__thumb {
+      background: $color__grey no-repeat center center;
+      background-size: cover;
+      height: 640px;
+      width: 500px;
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  #work {
+    padding: 100px 0;
+  }
+
+  .work {
+    &--title {
+      margin-top: 100px;
+    }
+
+    &--bg {
+      display: none;
+    }
+
+    &--caption {
+      max-width: 500px;
+      width: 100%;
+
+      &__title {
+        font-size: 1.125rem;
+      }
+
+      &__desc {
+        font-size: 1rem;
+      }
+    }
+
+    &--thumbs {
+      margin-top: 40px;
+      text-align: center;
+
+      &__thumb {
+        display: inline-block;
+        max-width: 500px;
+        width: 100%;
+      }
+    }
+  }
+}

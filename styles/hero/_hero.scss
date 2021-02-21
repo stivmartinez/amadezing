@@ -1,0 +1,140 @@
+#hero {
+  height: 100vh;
+  position: relative;
+
+  .container,
+  .row {
+    height: 100%;
+  }
+
+  .hero {
+    &--slides {
+      &__one,
+      &__two {
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+
+      .slide {
+        background: black no-repeat center center;
+        background-size: cover;
+        height: 400px;
+        margin-top: -200px;
+        position: absolute;
+        top: 50%;
+        width: 180px;
+      }
+
+      &__one {
+        .slide {
+          margin-top: -240px;
+        }
+      }
+
+      &__two {
+        .slide {
+          margin-left: 180px;
+          margin-top: -160px;
+        }
+      }
+
+      &__text {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+
+        .span {
+          color: white;
+          font-size: 12rem;
+          font-family: "Gordita Bold";
+          font-weight: normal;
+          line-height: 1;
+          left: -40px;
+          position: relative;
+          text-shadow: 2px 4px 8px rgba(black, 0.2);
+        }
+      }
+    }
+
+    &--text {
+      &__title {
+        font-size: 2.75rem;
+        font-family: "Gordita Medium";
+        font-weight: normal;
+        line-height: 1.5;
+        margin-bottom: 40px;
+      }
+
+      &__description {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  #hero {
+    height: auto;
+    overflow: hidden;
+
+    .container,
+    .row {
+      height: auto;
+    }
+
+    .hero {
+      overflow: hidden;
+
+      &--slides {
+        height: 60vh;
+        min-height: 400px;
+        position: relative;
+
+        &__text {
+          text-align: center;
+          width: 100%;
+
+          .span {
+            font-size: 6rem;
+            left: 0;
+          }
+        }
+
+        .slide {
+          height: 300px;
+          left: 50%;
+          margin-left: -150px;
+          margin-top: -170px;
+          top: 50%;
+          width: 140px;
+        }
+      }
+
+      &--text {
+        &__title {
+          font-size: 1.75rem;
+          line-height: 1.75;
+          margin: 0 auto;
+          max-width: 600px;
+          text-align: center;
+          width: 100%;
+        }
+
+        &__description {
+          font-size: 1rem;
+          margin: 30px 0;
+          text-align: center;
+        }
+      }
+    }
+
+    .hero--slides__two .slide {
+      margin-left: 0px;
+      margin-top: -130px;
+    }
+  }
+}

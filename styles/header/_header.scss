@@ -1,0 +1,45 @@
+#header {
+  height: 100px;
+  left: 0;
+  margin-bottom: -100px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+
+  .container,
+  .row {
+    height: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    &--logo {
+      img {
+        width: 114px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  #header {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+
+    .header {
+      &--logo {
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}

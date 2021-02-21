@@ -1,0 +1,61 @@
+#clients {
+  margin: 100px 0 0 0;
+
+  .clients {
+    &--logos {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: 8px -10px;
+      text-align: center;
+
+      &__logo {
+        display: block;
+        float: left;
+        margin: 0 10px 20px 10px;
+        padding: 0;
+        text-align: center;
+        width: calc(20% - 20px);
+
+        img {
+          max-height: 40px;
+          width: 120px;
+        }
+      }
+    }
+
+    &--title {
+      font-family: "Gordita Medium";
+      font-size: 2rem;
+      margin: 12px 0 20px 0;
+    }
+
+    &--desc {
+      font-size: 1.125rem;
+      line-height: 1.875;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  #clients {
+    margin: 30px 0 0 0;
+
+    .clients {
+      &--logos {
+        justify-content: center;
+
+        &__logo {
+          margin: 20px 0;
+          width: calc(50% - 20px);
+
+          &:last-of-type {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
