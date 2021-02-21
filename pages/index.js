@@ -12,7 +12,7 @@ export default function HomePage() {
     <div>
       <NextSeo
         title="Amadezing | Diseño Web, UI / UX, Marcas y WebApps desde Medellín."
-        description="Diseño Web, UI / UX, Marcas y WebApps desde Medellín."
+        description="Diseño Web, UI / UX, Marcas y WebApps desde Medellín, Colombia."
       />
       <Header />
       <Hero />

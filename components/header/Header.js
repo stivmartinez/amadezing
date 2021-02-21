@@ -10,7 +10,10 @@ export default function Header() {
           </div>
           <div className="col-xs-8 end-xs">
             <span className="end-xs">
-              <span>👋</span> <span className="hide-mobile">Hablemos,</span> <b>hello@amadezing.com</b>
+              <span>👋</span> <span className="hide-mobile">Hablémos,</span>{" "}
+              <b>
+                <a href="mailto:hello@amadezing.com">hello@amadezing.com</a>
+              </b>
             </span>
           </div>
         </div>

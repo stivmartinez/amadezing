@@ -57,8 +57,8 @@ export default function Services() {
                       Diseño UI / UX
                     </h2>
                     <p className="services--services__service--desc">
-                      El primer paso para tener un negocio exitoso es una marca
-                      recordable.
+                      Estudiamos y diseñamos basados en crear la mejor
+                      experiencia para el usuario final.
                     </p>
                   </div>
                 </div>
@@ -68,25 +68,25 @@ export default function Services() {
                       Producto
                     </span>
                     <h2 className="services--services__service--title">
-                      Desarrollo WebApp
+                      Desarrollo Web
                     </h2>
                     <p className="services--services__service--desc">
-                      El primer paso para tener un negocio exitoso es una marca
-                      recordable.
+                      Desarrollamos cualquier tipo de aplicación web con las
+                      últimas tecnologías.
                     </p>
                   </div>
                 </div>
                 <div className="services--services__service">
                   <div className="services--services__service--card">
                     <span className="services--services__service--category">
-                      Marketing
+                      Producto
                     </span>
                     <h2 className="services--services__service--title">
-                      Diseño sitio web
+                      Tiendas en línea
                     </h2>
                     <p className="services--services__service--desc">
-                      El primer paso para tener un negocio exitoso es una marca
-                      recordable.
+                      Tu propia tienda en línea con personalidad propia y una
+                      experiencia inigualable.
                     </p>
                   </div>
                 </div>

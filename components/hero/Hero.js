@@ -43,7 +43,7 @@ export default function Hero() {
                 <animated.div
                   class="slide"
                   style={{
-                    backgroundImage: `url(https://source.unsplash.com/collection/17098)`,
+                    backgroundImage: `url(https://source.unsplash.com/collection/789734)`,
                     transform: props.xy.interpolate(trans2),
                   }}
                 />
@@ -53,10 +53,11 @@ export default function Hero() {
           <div className="col-xs-12 col-md-7">
             <div className="hero--text">
               <h1 className="hero--text__title">
-                Diseñamos marcas únicas y desarrollamos productos digitales increibles.
+                Diseñamos marcas únicas y desarrollamos productos digitales
+                increíbles.
               </h1>
               <p className="hero--text__description">
-                Estudio independiente en Medellín, Colombia.
+                Estudio gráfico independiente.
               </p>
             </div>
           </div>

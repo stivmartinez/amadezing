@@ -35,13 +35,11 @@ export default function Work() {
                     Gato lovers con estilo
                   </h4>
                   <p className="work--caption__desc">
-                    Ramotion is a team of multidisciplinary digital product
-                    experts focused on branding, UI/UX design, mobile, and web
-                    development.
+                    GatoHolic es una marca Colombiana de ropa juvenil unisex con mucho
+                    estilo.
                   </p>
                   <div className="work--caption__metas">
                     <span>Branding</span>
-                    <span>WebApp</span>
                   </div>
                 </div>
               </div>
