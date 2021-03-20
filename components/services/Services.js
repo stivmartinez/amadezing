@@ -1,4 +1,5 @@
-import { useSpring, animated } from "react-spring";
+import { useSpring } from "react-spring";
+import useTranslation from "next-translate/useTranslation";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
 const trans1 = (x, y) => `translate3d(${x / 30}px,${y / 30}px,0)`;
@@ -6,6 +7,8 @@ const trans2 = (x, y) => `translate3d(${x / 26}px,${y / 26}px,0)`;
 const trans3 = (x, y) => `translate3d(${x / -30}px,${y / -30}px,0)`;
 
 export default function Services() {
+  const { t } = useTranslation();
+
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
     config: { mass: 10, tension: 550, friction: 140 },
@@ -21,72 +24,66 @@ export default function Services() {
           <div className="row middle-xs between-xs">
             <div className="col-xs-12">
               <div class="services--title">
-                <h3>Servicios</h3>
+                <h3>{t("common:services")}</h3>
               </div>
               <div className="services--caption">
                 <h2 className="services--caption__title">
-                  Creamos experiencias únicas
+                  {t("common:servicesTitle")}
                 </h2>
                 <p className="services--caption__desc">
-                  Ramotion is a team of multidisciplinary digital product
-                  experts focused on branding, UI/UX design, mobile, and web
-                  development.
+                  {t("common:servicesDesc")}
                 </p>
               </div>
               <div className="services--services">
                 <div className="services--services__service">
                   <div className="services--services__service--card">
                     <span className="services--services__service--category">
-                      Marketing
+                      {t("common:marketing")}
                     </span>
                     <h2 className="services--services__service--title">
-                      Diseño de marca (Logo)
+                      {t("common:serviceLogoTitle")}
                     </h2>
                     <p className="services--services__service--desc">
-                      El primer paso para tener un negocio exitoso es una marca
-                      recordable.
+                      {t("common:serviceLogoDesc")}
                     </p>
                   </div>
                 </div>
                 <div className="services--services__service">
                   <div className="services--services__service--card">
                     <span className="services--services__service--category">
-                      Producto
+                      {t("common:product")}
                     </span>
                     <h2 className="services--services__service--title">
-                      Diseño UI / UX
+                      {t("common:serviceDesignTitle")}
                     </h2>
                     <p className="services--services__service--desc">
-                      Estudiamos y diseñamos basados en crear la mejor
-                      experiencia para el usuario final.
+                      {t("common:serviceDesignDesc")}
                     </p>
                   </div>
                 </div>
                 <div className="services--services__service">
                   <div className="services--services__service--card">
                     <span className="services--services__service--category">
-                      Producto
+                      {t("common:product")}
                     </span>
                     <h2 className="services--services__service--title">
-                      Desarrollo Web
+                      {t("common:serviceDevelopTitle")}
                     </h2>
                     <p className="services--services__service--desc">
-                      Desarrollamos cualquier tipo de aplicación web con las
-                      últimas tecnologías.
+                      {t("common:serviceDevelopTitle")}
                     </p>
                   </div>
                 </div>
                 <div className="services--services__service">
                   <div className="services--services__service--card">
                     <span className="services--services__service--category">
-                      Producto
+                      {t("common:product")}
                     </span>
                     <h2 className="services--services__service--title">
-                      Tiendas en línea
+                      {t("common:productStoresTitle")}
                     </h2>
                     <p className="services--services__service--desc">
-                      Tu propia tienda en línea con personalidad propia y una
-                      experiencia inigualable.
+                      {t("common:productStoresDesc")}
                     </p>
                   </div>
                 </div>
